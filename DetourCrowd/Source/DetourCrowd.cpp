@@ -418,7 +418,7 @@ bool dtCrowd::init(const int maxAgents, const float maxAgentRadius, dtNavMesh *n
 	}
 
 	// Allocate temp buffer for merging paths.
-	m_maxPathResult = 512;
+	m_maxPathResult = 1024;
 	m_pathResult = (dtPolyRef *)dtAlloc(sizeof(dtPolyRef) * m_maxPathResult, DT_ALLOC_PERM);
 	if (!m_pathResult)
 		return false;
